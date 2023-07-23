@@ -12,120 +12,95 @@ public class Main {
         task5();
         task6();
         task7();
-
     }
 
     public static void task1() {
-        System.out.println("Задача 1");
         int age = 18;
-        if (age >= 18) {
-            System.out.println("Если возраст человека равен " + age + " он совершеннолтений");
+        if (age < 18) {
+            System.out.println("Вам меньше 18");
         } else {
-            System.out.println("Если возраст человека равен " + age + " Он не достиг совершеннолетния, нужно немного подождать");
+            System.out.println(" Вы совершеннолетний");
         }
     }
 
     public static void task2() {
-        System.out.println(" Задача 2");
-        int C = 5;
-        if (C <= 5) {
-            System.out.println("На улице холодно, нужно надеть шапку");
+        int c = 4;
+        if (c < 5) {
+            System.out.println("Нужно надеть шапку");
         } else {
-            System.out.println("Сегодня тепло, можно идти юез шапки");
+            System.out.println("Можно идти без шаки");
         }
     }
 
     public static void task3() {
-        System.out.println("Задача 3");
-        int speed = 60;
-        if (speed > 60) {
-            System.out.println("Если скорость " + speed + " ,то придется заплатить штраф");
+        int km = 59;
+        if (km < 60) {
+            System.out.println("Штрафа нет");
         } else {
-            System.out.println(" Можно ездить спокойно");
+            System.out.println("Прийдется заплатить штраф");
         }
     }
 
     public static void task4() {
-        System.out.println("Задача 4");
-        int age = 44;
-        boolean canGoToSlepp = age <= 2;
-        if (canGoToSlepp) {
-            System.out.println("Если возраст человека равен " + age + " то, ему пора спать");
-        }
-        boolean canGoToKindergarten = age > 2 && age < 6;
-        if (canGoToKindergarten) {
-            System.out.println("Если ворзаст человека равен " + age + " ему нужно ходить в десткий сад");
-        }
-        boolean canGoToSchool = age >= 7 && age < 18;
-        if (canGoToSchool) {
-            System.out.println("Если ворзаст человека равен " + age + " ему нужно ходить в школу");
-        }
-        boolean canGoToUniversity = age >= 18 && age < 24;
-        if (canGoToUniversity) {
-            System.out.println("Если ворзаст человека равен " + age + " его место в университете");
-        }
-        boolean canGoToTheWork = age >= 24 && age < 60;
-        if (canGoToTheWork) {
-            System.out.println("Если ворзаст человека равен " + age + " ему пора ходить на работу");
-        }
-        boolean canRest = age >= 60;
-        if (canRest) {
-            System.out.println("Если ворзаст человека равен " + age + " он может отдохнуть");
+        int age = 611;
+        if (age < 2) {
+            System.out.println("Тебе пора спать");
+        } else if (age > 2 && age < 6) {
+            System.out.println(" Детский сад");
+        } else if (age > 6 && age < 18) {
+            System.out.println(" Тебе надо ходить в школу");
+        } else if (age > 18 && age < 24) {
+            System.out.println("Твое место в универе");
+        } else if (age > 24 && age < 60) {
+            System.out.println("Тебе надо работаь");
+        } else {
+            System.out.println(" Можно отдохнуть");
         }
     }
 
     public static void task5() {
-        System.out.println("Задача 5");
-        int age = 4;
-        boolean canNotRide = age < 5;
-        if (canNotRide) {
-            System.out.println("Если возраст ребенка равен " + age + " ,то ему нельзя кататься на аттракционе");
-        }
-        boolean canRideWithAdults = age >= 5 && age < 14;
-        if (canRideWithAdults) {
-            System.out.println("Если возраст ребенка равен " + age + " , то он может кататься на аттракционе, в сопровождении взрослого");
-        }
-        boolean canRideAlone = age >= 14;
-        if (canRideAlone) {
-            System.out.println("Если возраст ребенка равен " + age + " , то он может кататься на аттракционе, без сопровождения взрослого");
-        }
-    }
-
-    public static void task6() {
-        System.out.println("Задача 6");
-        int ourSeat = 50;
-        if (ourSeat > 102) {
-            System.out.println("В вагоне нет мест");
+        int age = 13;
+        if (age < 5) {
+            System.out.println("Кататься нельзя");
+        } else if (age > 5 && age < 14) {
+            System.out.println("Кататься можно только в сопровождлении взрослого");
         } else {
-            System.out.println("В Вагоне есть место");
-        }
-        if (ourSeat <= 102 && ourSeat <= 60) {
-            System.out.println("Вы поедете сидя");
-        }
-        if (ourSeat <= 102 && ourSeat > 60) {
-            System.out.println("Вы поедете стоя");
+            System.out.println("Кататься можно");
+
         }
     }
+    public static void  task6() {
+        int mesto = 103;
+        if (mesto < 102) {
+            System.out.println("В вагоне есть место");
+        } else {
+            System.out.println("В Вагоне мест нет");
+        }
+        if (mesto < 60) {
+            System.out.println("Вы поедете сидя");
+        } else if (mesto >60 && mesto <102){
+            System.out.println("ВЫ поедете стоя");
+        }
 
+
+    }
     public static void task7() {
-        System.out.println("Задача 7");
-        int one = 543;
-        int two = 7457;
-        int three = 22;
-        boolean threeMore = three>two && three>one;
-        if (threeMore) {
+        int one = 31241;
+        int two = 523523523;
+        int three = 412515;
+        if (one > two && one > three) {
+            System.out.println(one);
+        } else if ( two>one && two>three) {
+            System.out.println(two);
+        } else {
             System.out.println(three);
         }
-        boolean twoMore = two>three && two>one;
-        if (twoMore) {
-            System.out.println(two);
-        }
-        boolean oneMore = one>two && one>three;
-        if (oneMore) {
-            System.out.println(one);
-        }
     }
+
 }
+
+
+
 
 
 
